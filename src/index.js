@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 const port = process.env.PORT || 3000;
 const nodeEnv = process.env.NODE_ENV;
 const mySetting = process.env.MY_SETTING;
-const version = 3;
+const version = 4;
 
 // setup express
 const app = express();
