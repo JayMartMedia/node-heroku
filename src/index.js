@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 const port = process.env.PORT || 3000;
 const nodeEnv = process.env.NODE_ENV;
 const mySetting = process.env.MY_SETTING;
+const version = 2;
 
 // setup express
 const app = express();
@@ -66,6 +67,7 @@ app.delete('/api/albums/:id', (req, res) => {
 app.get('/api/healthcheck', (req, res) => {
     res.send({
         status: 'online',
+        version,
         nodeEnv,
         mySetting
     });
