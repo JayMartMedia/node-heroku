@@ -14,4 +14,5 @@ jobs:
           branch: "main"
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "node-heroku-jmm-testing"
-          heroku_email: "testing@jaymartmedia.com"
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          # HEROKU_API_KEY and HEROKU_EMAIL will need to be set in repository secrets
